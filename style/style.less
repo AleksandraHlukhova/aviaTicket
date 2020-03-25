@@ -37,6 +37,7 @@ input, input[type="submit"]{
 	color: inherit;
 	font-size: 16px;
 	position: relative;
+	outline: none;
 	&::placeholder{
 		color: @main_color_text;
 	}
@@ -48,6 +49,8 @@ input, input[type="submit"]{
 	position: absolute;
 	z-index: 1;
 	top: 211px;
+	max-height: 300px;
+	overflow-x: hidden;
 	li{
 		// width: 100%;
 		padding: 10px 5px;
@@ -70,12 +73,15 @@ input, input[type="submit"]{
 	.d_flex(column; center; center);
 }
 h2{
+	text-align: center;
 	margin-top: 40px;
 	font-size: 30px;
+	margin-bottom: 30px;
 }
 article{
-	margin-top: 30px;
+	margin-bottom: 30px;
 	width: 90%;
+	margin: 0 auto;
 	.agent{
 		.d_flex(center; center);
 		height: 30px;

@@ -9,9 +9,9 @@
 <body>
 	<div class="container">
 		<h1>AviaTickets</h1>
-		<div class="form">
+		<form class="form">
 			<div class="input_wrap">
-				<input type="text" name="city_from" required placeholder="Город вылета" class="city_from">
+				<input type="text" name="city_from" required placeholder="Город вылета" autocomplete="off" class="city_from">
 				<ul class="dropdown dropdown__cities_from">
 					<!-- <li>ghbdfn</li>
 					<li>ghbdfn</li>
@@ -19,7 +19,7 @@
 					<li>ghbdfn</li>
 					<li>ghbdfn</li> -->
 				</ul>
-				<input type="text"  name="city_to" required placeholder="Город прибытия" class="city_to">
+				<input type="text"  name="city_to" required placeholder="Город прибытия" autocomplete="off" class="city_to">
 				<ul class="dropdown dropdown__cities_to">
 					<!-- <li>ghbdfn</li>
 					<li>ghbdfn</li>
@@ -31,10 +31,10 @@
 				<input type="date" name="form_date" required value="" 	class="form_date">
 			</div>
 			<input type="submit" value="Найти билеты" class="btn_b btn_search"></input>
-		</div>
+		</form> 
 
-		<!-- <section class="day_cheapest_card_wrap" >
-			<h2>Самый дешевый билет на эту дату</h2>
+		<section class="day_cheapest_card_wrap" >
+			<!-- <h2>Самый дешевый билет на эту дату</h2>
 			<article>
 				<h3 class="agent">Aviakassa</h3>
 				<div class="ticket_wrapper">
@@ -64,10 +64,10 @@
 						</div>
 					</div>
 				</div>
-			</article>
-		</section> -->
-		<!-- <section class="other_cheapest_card_wrap" >
-			<h2>Билеты на другие даты</h2>
+			</article> -->
+		</section>
+		<section class="other_cheapest_card_wrap" >
+			<!-- <h2>Билеты на другие даты</h2>
 			<article>
 				<h3 class="agent">Aviakassa</h3>
 				<div class="ticket_wrapper">
@@ -97,8 +97,8 @@
 						</div>
 					</div>
 				</div>
-			</article>
-		</section> -->
+			</article> -->
+		</section>
 	</div>
 
 
