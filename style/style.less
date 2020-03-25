@@ -1,0 +1,126 @@
+@import url(variables.less);
+@import url(mixiness.less);
+
+a:hover{
+	text-decoration: none;
+}
+
+body{
+	background-color: @main_color;
+	color: @main_color_text;
+	.d_flex(center; center);
+}
+h1{
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 40px;
+	font-size: 40px;
+}
+.form{
+	width: 75%;
+	margin: 0 auto;
+	.d_flex(column; space-between; center);
+	.input_wrap{
+		.d_flex(space-between; center);
+		width: 100%;
+		margin-bottom: 30px;
+		input{
+			background-color: @subcolor;
+		}
+	}	
+}
+input, input[type="submit"]{
+	height: 50px;
+	width: 33%;
+	padding-left: 10px;
+	border: 1px solid @main_color_text;
+	color: inherit;
+	font-size: 16px;
+	position: relative;
+	&::placeholder{
+		color: @main_color_text;
+	}
+}
+.dropdown{
+	width: 20%;
+	background-color: @subcolor;
+	color: inherit;
+	position: absolute;
+	z-index: 1;
+	top: 211px;
+	li{
+		// width: 100%;
+		padding: 10px 5px;
+	}
+}
+.dropdown__cities_to{
+	left: 546px;
+}
+.btn_b{
+	background-color: @bgc_orang;
+	border-radius: 5px;
+	&:hover{
+		color: inherit;
+		background-color: rgba(255, 69, 0, 0.8);
+	}
+}
+.day_cheapest_card_wrap, .other_cheapest_card_wrap{
+	width: 75%;
+	margin: 0 auto;
+	.d_flex(column; center; center);
+}
+h2{
+	margin-top: 40px;
+	font-size: 30px;
+}
+article{
+	margin-top: 30px;
+	width: 90%;
+	.agent{
+		.d_flex(center; center);
+		height: 30px;
+		border: 1px solid @main_color_text;
+		border-radius: 5px;
+		margin-bottom: 2px;
+		background-color: @subcolor;
+	}
+	.ticket_wrapper_part{
+		border: 1px solid @main_color_text;
+		background-color: @subcolor;
+		border-radius: 5px;
+		padding: 30px;
+	}	
+	.left-side{
+		margin-right: 1px;
+		height: 100%;
+		.d_flex(center; center);
+		.btn_buy{
+			.d_flex(center; center);
+			text-align: center;			
+			padding: 20px 5px;
+			width: 80%;
+			display: inline-block;
+			color: inherit;
+		}
+	}	
+	.right-side{
+		margin-left: 1px;
+		.d_flex(space-between; flex-start);
+		.block{
+			width: 50%;
+		}
+		.block-right{
+			text-align: right;
+			.changes{
+				margin-bottom: 20px;
+			}
+		}
+		.city_name{
+			font-size: 18px;
+			font-weight: bold;
+		}
+		.date{
+			margin-top: 20px;
+		}
+	}
+}
